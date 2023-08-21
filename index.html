@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samti.dev</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://kit.fontawesome.com/7c2b5789de.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ysabeau+SC&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div>
+        <!--Grey filter-->
+        <div class="none" id="greyFilter"></div>
+
+        <!-----Loading Screen----->
+        <div class="loading" id="loading">
+            <p class="loading-text" id="loading-text">Hei</p>
+            <p class="loading-loading">Laster...</p>
+        </div>
+
+        <!-----Logoet (samti.dev)----->
+        <p class="logo-tekst" id="logo-tekst">samti.dev</p>
+
+        <!-----Scrollbar----->
+        <div class="scroll-bar" id="scroll-bar"></div>
+
+        <!-----Grid map----->
+        <div class="section" id="section" style="display: none;">
+            <div class="maindisp">
+                <div class="left item1">
+                    <p>Velkommen hit&#x1F44B;</p>
+                </div>
+                <div class="right item2"></div>
+                <div class="left item3">
+                    <div>
+                        <p>Jeg er en IT elev på Amalie Skram VGS
+                             som begynner på mitt andre år med 5,7 i snitt.</p>
+                        <p>Under her er kan du se spårkene/programmene jeg har lært, men jeg ville 
+                            ikke sagt at jeg er en mester i de.</p>
+                    </div>
+                </div>
+                <div class="left item4">
+                    <div>
+                        <p>Jeg bruker mesteparten av min tid på skole og trening,
+                            men er også sosial med de jeg er rundt.
+                        </p>
+                        <p>Jeg er fokusert når det gjelder og elsker å lære nye ting.</p>
+                    </div>
+                </div>
+                <div class="right item5">
+                    <div><i class="fab fa-html5"></i> </div>
+                    <div><i class="fab fa-css3"></i> </div>
+                    <div><i class="fab fa-js"></i> </div>
+                    <div><i class="fab fa-python"></i> </div>
+                    <div><i class="fas fa-fire"></i> </div>
+                </div>
+                <div class="left item6">
+                    <div class="imgDiv" id="imgDiv"></div>
+                    <div class="websiteDescription">
+                        <p>Dette var min første JS oppgave etter vi hadde en intro til språket.
+                            Vi hadde en liste med punkter som var nødt til å truffet.
+                        </p>
+                        <p>Inspirasjonen min for oppgaven var nettsiden <a class="theUselessWeb" href="https://theuselessweb.com/" target="_blank">theuselessweb.com</a>.</p>
+                        <p>Nettsiden har en knapp som leder til to forskjellige sider. En der du kan skrive ett år og finne gøy fakte fra det året, 
+                            og en der du kan lage din egen matrett.
+                        </p>
+                    </div>
+                </div>
+                <div class="right item7">
+                    <div class="imgDiv2" id="imgDiv2"></div>
+                    <div class="websiteDescription2">
+                        <p>Dette er den siste oppgaven vi hadde for VG1. Vi skulle bruke alt 
+                            sammen vi hadde lært og lage en "Husarbeid Web App"</p>
+                        <p>Språkene brukt er HTML, CSS, JS og for databasen brukte jeg Firestore.</p>
+                        <p>Gjerne gå inn og gjør hva du vil. Du kan forandre på bilder, farge, navn, men da må du laste siden på nytt.
+                            Ellers blir alle oppgavene og alt annet oppdateres automatisk.
+                        </p>
+                    </div>
+                </div>
+                <div class="right item8">
+                    <div class="imgDiv3" id="imgDiv3"></div>
+                    <div class="websiteDescription3">
+                        <p>Dette var en "Data Analasys" oppgave vi hadde i mattematikk. 
+                            Vi skulle laste ned en .CSV fil og presentere det på oversiktlig måte.
+                        </p>
+                        <p>Jeg og læreren ble fornøyd med oppgaven, og jeg fikk en 5+ på oppgaven</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact">
+                <i class="envelope fa-regular fa-envelope" id="emailButton"></i>
+                <a href="https://github.com/Samticode" target="_blank"><i class="github fa-brands fa-github"></i></a>
+            </div>
+        </div>
+
+        <!-----Menu----->
+        <div class="barsButton" id="barsButton">
+            <i class="fa-solid fa-bars" style="color: #11151c;"></i>
+        </div>
+        <div class="menuBarHidden griddy" id="menuBar">
+            <div class="menuOptions">
+                <div>
+                    <p class="menuOptionOption" data-scroll-percentage="0">Meg</p>
+                </div>
+                <div>
+                    <p class="menuOptionOption" data-scroll-percentage="33">Portfolio</p>
+                </div>
+                <div>
+                    <p class="menuOptionOption" data-scroll-percentage="100">Kontakt</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./index.js"></script>
+</html>
