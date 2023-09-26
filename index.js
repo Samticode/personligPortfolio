@@ -71,7 +71,7 @@ const observerRight = new IntersectionObserver((entries) => {
 rightDivs.forEach((el) => observerRight.observe(el));
 leftDivs.forEach((el) => observerLeft.observe(el));
 
-//-----------------//
+//------------------//
 
 const menuButton = document.getElementById('barsButton');
 const menuBar = document.getElementById('menuBar');
@@ -96,7 +96,13 @@ menuButton.addEventListener('click', () => {
     }
 });
 
-
+greyFilter.addEventListener('click', () => {
+    greyFilter.classList.remove('greyFilter');
+    document.body.style.overflow = 'auto';
+    menuBar.classList.remove('menuBar');
+    menuBar.classList.add('menuBarHidden');
+    buttonIndex = 1;
+});
 
 //-----------------//
 
@@ -116,6 +122,7 @@ emailButton.addEventListener('click', () => {
 const imgDiv = document.getElementById('imgDiv');
 const imgDiv2 = document.getElementById('imgDiv2');
 const imgDiv3 = document.getElementById('imgDiv3');
+const imgDiv4 = document.getElementById('imgDiv4');
 
 imgDiv.addEventListener('click', () => {
     window.open(`https://samticode.github.io/JavascriptAssignment/`, '_blank');
@@ -125,6 +132,9 @@ imgDiv2.addEventListener('click', () => {
 });
 imgDiv3.addEventListener('click', () => {
     window.open(`https://github.com/Samticode/dataAnalasys/blob/main/sdInnlevering.ipynb`, '_blank');
+});
+imgDiv4.addEventListener('click', () => {
+    window.open(`https://samticode.github.io/min_valgomat/`, '_blank');
 });
 
 //-----------------//
