@@ -105,13 +105,13 @@ font-family: 'Ysabeau SC', sans-serif;
 }
 
 .maindisp{
-    aspect-ratio: 4 / 8;
+    aspect-ratio: 4 / 10;
     width: clamp(375px, 100%, 1700px);
     margin: 85px auto 40px;
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-rows: repeat(10, 1fr);
     column-gap: 50px;
     row-gap: 50px;
 
@@ -224,7 +224,7 @@ font-family: 'Ysabeau SC', sans-serif;
                 place-items: center;
             }
                 .websiteDescription > p {
-                    font-size: 1.3rem;
+                    font-size: 1.5rem;
                     color: #EFF5FB;
                 }
                 .theUselessWeb {
@@ -261,7 +261,7 @@ font-family: 'Ysabeau SC', sans-serif;
                 place-items: center;
             }
                 .websiteDescription2 > p {
-                    font-size: 1.3rem;
+                    font-size: 1.5rem;
                     color: #EFF5FB;
                 }
         .item8 {
@@ -274,18 +274,19 @@ font-family: 'Ysabeau SC', sans-serif;
             background-color: #000c17;
         }
             .imgDiv3 {
-                height: 100%;
+                height: 60%;
                 width: 100%;
+                border-radius: 1vmax;
 
                 background-image: url(./bilderoggifs/Screenshot\ 2023-08-12\ at\ 17.58.19.png);
-                background-size: 140% 100%;
+                background-size: 110% 110%;
                 background-position: center;
                 cursor: pointer;
 
                 transition: cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s;
             }
             .imgDiv3:hover {
-                background-size: 160% 110%;
+                background-size: 115% 115%;
             }
             .websiteDescription3 {
                 height: 90%;
@@ -295,9 +296,37 @@ font-family: 'Ysabeau SC', sans-serif;
                 place-items: center;
             }
                 .websiteDescription3 > p {
-                    font-size: 1.3rem;
+                    font-size: 1.5rem;
                     color: #EFF5FB;
                 }
+        .item9 {
+            grid-column: 1 / span 4;
+            grid-row: 9 / span 2;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            place-items: center;
+            background-color: #a6c6eb;
+        }
+            .imgDiv4 {
+                height: 60%;
+                width: 100%;
+                border-radius: 1vmax;
+
+                background-image: url(./bilderoggifs/valgomat.png);
+                background-size: 100% 100%;
+                background-position: center;
+                cursor: pointer;
+
+                transition: cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s;
+            }
+            .imgDiv4:hover {
+                background-size: 105% 105%;
+            }
+            .websiteDescription4 {
+                width: 80%;
+                font-size: 1.5rem;
+            }
 
         /*------grid animation--------*/
 
@@ -320,7 +349,7 @@ font-family: 'Ysabeau SC', sans-serif;
             transform: translateX(0);
         }
 
-        /*------contact screen--------*/
+        /*-------contact screen--------*/
 
         .contact {
             background-color: #212D40;
@@ -455,10 +484,10 @@ font-family: 'Ysabeau SC', sans-serif;
         font-size: 4rem;
     }
     .maindisp{
-        aspect-ratio: 2 / 14;
+        aspect-ratio: 2 / 17;
     
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(14, 1fr);
+        grid-template-rows: repeat(17, 1fr);
     }
         .item1 > p {
             font-size: 275%;
@@ -508,6 +537,15 @@ font-family: 'Ysabeau SC', sans-serif;
     }
         .websiteDescription3 > p {
             font-size: 0.9rem;
+        }
+    .item9 {
+        grid-column: 1 / span 2;
+        grid-row: 15 / span 3;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.7fr 1fr;
+    }
+        .websiteDescription4 > p {
+            font-size: 1rem;
         }
 
     .barsButton {
