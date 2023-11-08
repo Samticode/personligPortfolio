@@ -30,7 +30,7 @@ font-family: 'Ysabeau SC', sans-serif;
 
 /*---Grey filter---*/
 .none {
-    transition: all 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 .greyFilter {
     position: fixed;
@@ -181,17 +181,11 @@ font-family: 'Ysabeau SC', sans-serif;
 
             display: grid;
             place-items: center;
-            grid-template-columns: repeat(5, 1fr);
+            grid-template-columns: repeat(7, 1fr);
+            place-items: center;
         }
-            .item5 > div {
-                height: 100%;
-                width: 100%;
-                display: grid;
-                place-items: center;
-            }
-            .item5 > div > i {
-                font-size: 9rem;
-                color: #212D40;
+            .item5 > img {
+                width: 60%;
             }
         .item6 {
             grid-column: 1 / span 2;
@@ -421,7 +415,7 @@ font-family: 'Ysabeau SC', sans-serif;
     width: clamp(500px, 40%, 730px);
     background-color: #11151C;
 
-    transition: all cubic-bezier(.19,.19,.21,.98) 1.1s;
+    transition: all cubic-bezier(.19,.19,.21,.98) 0.5s;
 }
 
 .menuBarHidden {
@@ -435,7 +429,7 @@ font-family: 'Ysabeau SC', sans-serif;
     background-color: #11151C;
     border-radius: 50% 0 0 50%;
 
-    transition: all cubic-bezier(.19,.19,.21,.98) 0.8s;
+    transition: all cubic-bezier(.19,.19,.21,.98) 0.5s;
 }
 
 .griddy {
